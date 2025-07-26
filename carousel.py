@@ -1,8 +1,8 @@
 bl_info = {
-    "name": "Collection Instance Animator",
-    "author": "AI Assistant",
+    "name": "Carousel",
+    "author": "NXSTYNATE",
     "version": (1, 0, 2),
-    "blender": (3, 0, 0),
+    "blender": (4, 5, 0),
     "location": "View3D > Sidebar > Collection Animator",
     "description": "Animate linked collection instances with Z-axis keyframes",
     "category": "Animation",
@@ -264,7 +264,7 @@ class CollectionAnimatorProperties(PropertyGroup):
     frame_offset: IntProperty(
         name="Frame Offset",
         description="Frame distance between each collection's animation start",
-        default=5,
+        default=2,
         min=1
     )
     
