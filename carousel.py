@@ -3,7 +3,7 @@ bl_info = {
     "author": "NXSTYNATE",
     "version": (1, 0, 2),
     "blender": (4, 5, 0),
-    "location": "View3D > Sidebar > Collection Animator",
+    "location": "View3D > Sidebar > Carousel",
     "description": "Animate linked collection instances with Z-axis keyframes",
     "category": "Animation",
 }
@@ -217,7 +217,7 @@ class COLLANIM_OT_apply_animation(Operator):
 
 
 class CollectionAnimatorProperties(PropertyGroup):
-    """Properties for the Collection Animator"""
+    """Properties for the Carousel"""
     
     target_file_path: StringProperty(
         name="Target File",
@@ -277,12 +277,12 @@ class CollectionAnimatorProperties(PropertyGroup):
 
 
 class COLLANIM_PT_main_panel(Panel):
-    """Main panel for Collection Animator"""
-    bl_label = "Collection Instance Animator"
+    """Main panel for Carousel"""
+    bl_label = "Carousel"
     bl_idname = "COLLANIM_PT_main_panel"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = "Collection Animator"
+    bl_category = "Carousel"
     
     def draw(self, context):
         layout = self.layout
